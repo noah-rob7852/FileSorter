@@ -13,4 +13,4 @@ def sort_files(filepath):
             shutil.move(f'{filepath}\\{file}', f'{filepath}\\{pathlib.Path(file).suffix}\\{file}')
             print(f'Moved {file} to {filepath}\\{pathlib.Path(file).suffix}')
 if __name__ == "__main__":
-    sort_files(os.getcwd)
+    sort_files(os.getcwd())
